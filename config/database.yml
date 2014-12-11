@@ -10,10 +10,10 @@ default: &default
   timeout: 5000
 
 development:
-  <<: *default
-  database: my_database_development
-  username: fqhhnxzijxiksu
-  password: eGrQyunroX-A2VTct7jTasI03E
+  adapter: postgresql
+  host: localhost
+  username: user
+  database: app-dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
